@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi9/openjdk-17:1.23-6.1758133908
 
 MAINTAINER Shanna Chan “shchan@redhat.com”
-
+USER 0
 EXPOSE 8080
 ENV JAVA_OPTIONS '-Xmx256m'
 COPY app.jar /app.jar
