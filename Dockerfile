@@ -1,7 +1,6 @@
 FROM registry.redhat.io/ubi9:9.6
 
 MAINTAINER Shanna Chan “shchan@redhat.com”
-USER 10001
 EXPOSE 8080
 ENV JAVA_OPTIONS '-Xmx256m'
 COPY app.jar /app.jar
